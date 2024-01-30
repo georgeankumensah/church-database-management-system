@@ -16,10 +16,13 @@ app.use(express.static(path.join(__dirname, "/public")));
 const userRouter = require("../routes/user.route");
 const memberRouter = require("../routes/member.route");
 const eventRouter = require("../routes/event.route");
+const groupRouter = require("../routes/group.route");
 
 // Routes
 app.use("/users", userRouter);
 app.use("/members", memberRouter);
+app.use("/events", eventRouter);
+app.use("/departments", groupRouter);
 
 app.all("*", (req, res) => {
   res.status(404);
