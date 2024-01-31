@@ -6,7 +6,7 @@ const connectDb = require("./config/connectDb")
 
 const server = http.createServer(app)
 
-const PORT = 3000;
+const PORT = 8000;
 console.log(process.env.MODE);
 
 

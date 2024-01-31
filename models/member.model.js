@@ -15,7 +15,7 @@ const memberSchema = new mongoose.Schema({
     state: String,
     digitalAddress: String,
   },
-  joining_date: Date,
+  joining_date: Date, 
   baptism_date: Date,
   marital_status: String,
   spouse: {
@@ -24,7 +24,7 @@ const memberSchema = new mongoose.Schema({
   },
   children: [
     {
-      first_name: String,
+      first_name: String, 
       last_name: String,
       date_of_birth: Date,
     },
